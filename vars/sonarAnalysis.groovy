@@ -1,6 +1,6 @@
 def call() {
     echo 'Ejecución de las pruebas de calidad de código'
-    timeout(time: 5, unit: 'MILLISECONDS') {
-        return true
+    timeout(activity: true, time: 5) {
+        return 'Tiempo cumplido'
     }
 }
